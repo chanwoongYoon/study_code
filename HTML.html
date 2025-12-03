@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="content_size"><img class="logo" src="image/main_logo-Photoroom.png"></img></a>
+            <div class="contents">
+                <a href="HTML.html" class="content_size"><img class="article first" src="image/html_logo.png"></img></a>
+                <a href="HTML.html" class="content_size"><img class="article second" src="image/CSS_logo.png"></img></a>
+                <a href="HTML.html" class="content_size"><img class="article thrid" src="image/Javascript_logo.png"></img></a>
+                <a href="HTML.html" class="content_size"><img class="article fourth" src="image/python_logo.webp"></img></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="box selector">
+            <h1>선택자</h1>
+            <hr>
+            <ol>
+                <li class="selectors">전체&emsp;* {}</li>
+                <li class="selectors">타입&emsp;span {}</li>
+                <li class="selectors">클래스&emsp;.price {}</li>
+                <li class="selectors">아이디&emsp;#container {}</li>
+                <li class="selectors">속성&emsp;button[type] {}</li>
+            </ol>
+        </div>
+        <div class="box selector_sub">
+            <h1>선택자 하위요소</h1>
+            <hr>
+            <ol>
+                <li class="selectors">선택자 선택자 {}</li>
+                <li class="selectors">선택자 > 선택자 {} - 직계자식요소 선택</li>
+            </ol>
+        </div>
+        <div class="box selector">
+            <h1>가상 클래스 선택자</h1>
+            <hr>
+            <ol>
+                <li class="selectors">:hover - 마우스가 요소위에 있는 상태일 때</li>
+                <li class="selectors">:active - 요소가 사용자에 의해 활성화</li>
+                <li class="selectors">:focus - 입력필드,링크등의 요소가 포커스 받은 상태</li>
+                <li class="selectors">:checked - 라디오,체크박스 등의 입력필드가 선택된 상태</li>
+            </ol>
+        </div>
+        <div class="box selector">
+            <h1>글자조정</h1>
+            <hr>
+            <ol>
+                <li class="selectors">
+                    font-family: 폰트지정<br>
+                    &emsp;font-family:"궁서체","돋움",sans-serif;
+                </li>
+                <li class="selectors">
+                    font-size: 글자 크기 지정<br>         
+                    &emsp;font-size:절대단위(px,pt)/상대단위(em,rem);<br>
+                    &emsp;&emsp;백분율: 부모요소의 폰트크기에 상대적인 단위<br>
+                    &emsp;&emsp;em:부모 요소의 폰트크기에 상대적 단위<br>
+                    &emsp;&emsp;rem:최고 부모 요소의 폰트크기에 상대적 단위
+                </li>
+                <li class="selectors">
+                    font-style: 스타일 정의<br>
+                    &emsp;font-style: normal/italic(이탤릭체)/oblique(폰트 그냥 기울임 처리)
+                </li>
+                <li class="selectors">
+                    font-weight: 폰트의 두께 설정<br>
+                    &emsp;font-weight: 키워드(normal{400},bold{700})/숫자(100,200...900)
+                </li>
+                <li class="selectors">
+                    색상:<br>
+                    &emsp;color:색상명/hex코드/rgb/rgba
+                </li>
+            </ol>
+        </div>
+        <div class="box selector">
+            <h1>텍스트 레이아웃</h1>
+            <hr>
+            <ol>
+                <li class="selectors">
+                    line-height: 텍스트 줄 간격<br>
+                    &emsp;line-height:숫자(배수)/백분율(%)/크기단위(px,em)등
+                    &emsp;line-height값에서 text세로 크기 뺀 값을 위아래에 배치
+                </li>
+                <li class="selectors">
+                    text-align: 텍스트 수평 정렬 방식<br>         
+                    &emsp;text-align:left/right/center/justify/start/end<br>
+                </li>
+                <li class="selectors">
+                    letter-spacing:"글자"간 간격<br>
+                    &emsp;letter-spacing:크기단위(px,em)
+                </li>
+                <li class="selectors">
+                    word-spacing:"단어"사이의 간격<br>
+                    &emsp;word-spacing:크기단위(px,em)
+                </li>
+                <li class="selectors">
+                    background-color:배경색<br>
+                    &emsp;background-color:#00FF00;
+                </li>
+                <li class="selectors">
+                    background-image:배경이미지<br>
+                    &emsp;background-image:url('PIA_sad.jpg')
+                </li>
+                <li class="selectors">
+                    background-size:배경 맞춤<br>
+                    &emsp;background-size:auto/cover/container
+                </li>
+            </ol>
+        </div>
+        <div class="box transform">
+            <h1>요소 움직이기</h1>
+            <hr>
+            <ol>
+                <li class="transforms">
+                    translate(x, y):요소를 X축(수평)과 Y축(수직)으로 이동합니다.<br>
+                    &emsp;transform: translate(50px, 100px);
+                </li>
+                <li class="transforms">
+                    translateX(x):요소를 X축으로만 이동합니다.<br>         
+                    &emsp;transform: translateX(-50%); - [자기 자신의 크기의 50%이동]<br>
+                </li>
+                <li class="transforms">
+                    translateY(y):요소를 Y축으로만 이동합니다.<br>
+                    &emsp;transform: translateY(2rem);
+                </li>
+                <li class="transforms">
+                    translateZ(z):요소를 Z축(깊이)으로 이동합니다. (3D)<br>
+                    transform: translateZ(20px);
+                </li>
+                <li class="transforms">
+                    translate3d(x, y, z):요소를 3차원 공간에서 이동합니다.<br>
+                    &emsp;transform: translate3d(10px, 5px, -5px);
+                </li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
