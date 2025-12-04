@@ -1,0 +1,23 @@
+<select>:선택박스
+    <option value="small">:여러 항목 하나의 박스에
+    
+<form> ; Pakage
+    action:데이터 어디로 보낼 지(/search)
+    폼이 우리를 데려가는 곳
+    method:get,post....
+
+    input
+        https://developer.mozilla.org/en-US/play?uuid=68d0645aeef09b1de102af2e05ccc317d4a9bdde&state=q1bKKMnNUbJSssnMKygtUSipLEi1jVFKzs%2FJL4pRUshLzEXi6tsp6SglFxcrWSkp6ShlQemSjNTcVCUrpZTEomylWgA%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FHTML%2FReference%2FElements%2Finput%2F
+        - type
+        "text","password","color","month","number","reset","radio","checkbox"
+        - placeholder
+    
+    label - connect
+        for:input의 아이디
+
+    button - form.action태그의 위치로 이동(기본)
+        type="button" - 폼 제출 안함
+        type="submit" - 폼 제출 함(기본)
+    
+    a.name - url에 다음 값을 전달
+        name = val 형식으로 전달
