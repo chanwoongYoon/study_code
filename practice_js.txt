@@ -95,7 +95,7 @@ console.log():콘솔에 괄호안의 메시지 띄우기
     document.querySelector("선택자") - 첫번쨰 요소 반환
     document.querySelectorAll("선택자") - 모든 요소 반환
 
-<콘텐츠 조작>
+<콘텐츠 조작>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     element.textContent: 텍스트 조회,수정
         const winter = document.getElementsByClassName("winter");
         console.log(winter[0].textContent);
@@ -162,3 +162,34 @@ console.log():콘솔에 괄호안의 메시지 띄우기
 
 <form 태그>
     submit:<form>태그에서만 사용가능
+
+----------------------------------------------------------------------
+    <div class="box selector">
+        <h1>글자조정</h1>
+            <hr>
+            <ol>
+                <li class="descriptions">
+                    font-family: 폰트지정<br>
+                    &emsp;font-family:"궁서체","돋움",sans-serif;
+                </li>
+                <li class="descriptions">
+                    font-size: 글자 크기 지정<br>         
+                    &emsp;font-size:절대단위(px,pt)/상대단위(em,rem);<br>
+                    &emsp;&emsp;백분율: 부모요소의 폰트크기에 상대적인 단위<br>
+                    &emsp;&emsp;em:부모 요소의 폰트크기에 상대적 단위<br>
+                    &emsp;&emsp;rem:최고 부모 요소의 폰트크기에 상대적 단위
+                </li>
+                <li class="descriptions">
+                    font-style: 스타일 정의<br>
+                    &emsp;font-style: normal/italic(이탤릭체)/oblique(폰트 그냥 기울임 처리)
+                </li>
+                <li class="descriptions">
+                    font-weight: 폰트의 두께 설정<br>
+                    &emsp;font-weight: 키워드(normal{400},bold{700})/숫자(100,200...900)
+                </li>
+                <li class="descriptions">
+                    색상:<br>
+                    &emsp;color:색상명/hex코드/rgb/rgba
+                </li>
+            </ol>
+        </div>
