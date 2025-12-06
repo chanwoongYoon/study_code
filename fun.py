@@ -173,47 +173,8 @@ string = '''<이벤트>
     [윈도우 이벤트]
         load:페이지나 이소스가 완전히 로드 된 후 발생
         resize:브라우저나 창 크기가 변경될 때
-        scroll:사용자가 스크롤 시
+        scroll:사용자가 스크롤 시!
         '''
 
 tab = '    '
 enter = '\n'
-split_val = r'\n    '
-string_small_chunck = re.split(split_val,string)
-print(string_small_chunck)
-new_string = []
-
-h1 = string_small_chunck[0][1:-1]
-for i in string_small_chunck[1:]:
-    if('    ' in i):
-        i = i.replace('    ','&emsp;')
-    i += '<br>\n'
-    new_string.append(i)
-
-print(new_string)
-
-final_lst = []
-final_lst.append(h1)
-group = ''
-for i in new_string:
-    if('&emsp;' in i):
-        print(f'&emsp; in {i}')
-        group += i
-    else:
-        final_lst.append(group)
-        final_lst.append(i)
-        group = ''
-
-print(f'<h1>{final_lst[0]}</h1>')
-print(f'    <hr>')
-print(f'    <ol>')
-for i in range(2,len(final_lst)):
-    if (i%2 == 0):
-        print('<li class="descriptions">')
-        print(final_lst[i],end='')
-    else:
-        print(i%2 == 0)
-        print(final_lst[i],end='')
-        print('</li>')
-
-#main
