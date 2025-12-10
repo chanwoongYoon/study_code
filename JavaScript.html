@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,405 +21,407 @@
         </nav>
     </header>
     <main>
-        <div class="box selector">
-            <h1>script 코드 head에다가 쓰기</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    defer태그 쓰면 됨 ㅇㅇ<br>
-                </li>
-                <!-- <li class="descriptions">
-                    <script src="script.js" defer></script><br>
-                </li> -->
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>유용한 명령어들</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    alert():알림창에 괄호안의 메시지 띄우기<br>
-                </li>
-                <li class="descriptions">
-                    console.log():콘솔에 괄호안의 메시지 띄우기<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>convention</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    변수명:변수,함수이름은 소문자로 작성하고 이후나오는 단어는 대문자(camelCase)<br>
-                    &emsp;getNickName
-                </li>
-                <li class="descriptions">
-                    주석 적절히 잘 사용<br>
-                </li>
-                <li class="descriptions">
-                    문장 끝날 때마다 세미콜론 추가<br>
-                </li>
-                <li class="descriptions">
-                    적절한 들여쓰기<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>변수</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    변수선언 규칙<br>
-                    &emsp;변수명 문자,밑줄,달러기호로 시작<br>
-                    &emsp;자바스크립트 예약어 변수화 금지<br>
-                    &emsp;대소문자 구분함
-                </li>
-                <li class="descriptions">
-                    let:변수 재할당 가능<br>
-                </li>
-                <li class="descriptions">
-                    const:변수 재할당 불가<br>
-                </li>
-                <li class="descriptions">
-                    var:미친놈임,hoisting함<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>자료형</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    number,string,boolean,null,undefined,object,array<br>
-                </li>
-                <li class="descriptions">
-                    typeof():자료형 반환<br>
-                </li>
-                <li class="descriptions">
-                    number+string가능!<br>
-                </li>
-                <li class="descriptions">
-                    템플릿 리터럴:f string같은거임<br>
-                    &emsp;`오늘 사과값은 ${price}원 입니다`
-                </li>
-                <li class="descriptions">
-                    null:변수값이 선언되지 않음<br>
-                </li>
-                <li class="descriptions">
-                    undefined:변수값 선언되었지만 할당되진 않음<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>객체</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    object:여러정보 하나에 묶어서 저장 - 딕셔너리임<br>
-                    &emsp;let apple{<br>
-                    &emsp;&emsp;color:"red",<br>
-                    &emsp;&emsp;weight:150,<br>
-                    &emsp;&emsp;price:2000<br>
-                    &emsp;}
-                </li>
-                <li class="descriptions">
-                    객체 값 불러오기<br>
-                    &emsp;console.log(apple.color)<br>
-                    &emsp;console.log(apple["weight"])
-                </li>
-                <li class="descriptions">
-                    객체 값 추가<br>
-                    &emsp;apple.origin = "충주"; //값 추가
-                </li>
-                <li class="descriptions">
-                    객체 값 수정<br>
-                    &emsp;apple.price = 2800; //값 수정
-                </li>
-                <li class="descriptions">
-                    객체 값 삭제<br>
-                    &emsp;delete apple.price;
-                </li>
-                <li class="descriptions">
-                    배열 선언<br>
-                    &emsp;let products = ['고등어','삼치','김치']
-                </li>
-                <li class="descriptions">
-                    배열 추가<br>
-                    &emsp;product.push("딸기")
-                </li>
-                <li class="descriptions">
-                    배열 맨 뒤 삭제<br>
-                    &emsp;product.pop()
-                </li>
-                <li class="descriptions">
-                    배열 맨 앞 추가<br>
-                    &emsp;product.unshift("고구마")
-                </li>
-                <li class="descriptions">
-                    배열 맨 앞 삭제<br>
-                    &emsp;product.shift()
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>비교 연산자</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    == : 값이 같으면 참<br>
-                    &emsp;5 == '5' -> true
-                </li>
-                <li class="descriptions">
-                    === : 값과 자료형이 같으면 참 ***<br>
-                    &emsp;5 === '5' -> false
-                </li>
-                <li class="descriptions">
-                    != : 값이 다르면 참<br>
-                    &emsp;5 != '5' -> false
-                </li>
-                <li class="descriptions">
-                    !== : 값이나 자료형이 다르면 참 ***<br>
-                    &emsp;5 !== '5' -> true
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>논리 연산자</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    && : and<br>
-                </li>
-                <li class="descriptions">
-                    || : or<br>
-                </li>
-                <li class="descriptions">
-                    ! : not<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>삼항 연산자</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    let period = (조건) ? 'true 값':'false 값';<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>반복문</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    for(let num of num_list){}<br>
-                    &emsp;let lst = [1,23,4,5,6,78]<br>
-                    &emsp;for (let i of lst){<br>
-                    &emsp;&emsp;console.log(i)<br>
-                    &emsp;}
-                </li>
-                <li class="descriptions">
-                    do{반복할 코드} while(조건);<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>화살표 함수</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    const 함수이름 = (매개변수1,매개변수2...) => {실행할 코드}<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>요소 접근</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    document.getElementById:아이디로     document.getElementByClassName: 요소의 클래스명(배열)<br>
-                </li>
-                <li class="descriptions">
-                    document.getElementByTagName: 요소의 태그명(시멘틱 태그)<br>
-                </li>
-                <li class="descriptions">
-                    document.querySelector("선택자") - 첫번째 요소 반환<br>
-                </li>
-                <li class="descriptions">
-                    document.querySelectorAll("선택자") - 모든 요소 반환<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>콘텐츠 조작</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    element.textContent: 텍스트 조회,수정<br>
-                    &emsp;const winter = document.getElementsByClassName("winter");<br>
-                    &emsp;console.log(winter[0].textContent);
-                </li>
-                <li class="descriptions">
-                    element.innerHTML: 텍스트 뿐 아니라 Html 콘텐츠 수정,조회 가능<br>
-                    &emsp;const shirt=document.getElementsByTagName("li");<br>
-                    &emsp;shirt[0].innerHTML = "<strong>Yeah</strong>원"<br>
-                    &emsp;console.log(shirt[0].textContent)
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>HTML요소 속성 변경</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    getAttribute("속성 이름"):속성 조회<br>
-                </li>
-                <li class="descriptions">
-                    setAttribute("속성 이름","새로운 속성값"):속성 수정<br>
-                </li>
-                <li class="descriptions">
-                    setAttribute("disabled",true):<br>
-                    &emsp;disabled:button,input,textarea,select등의 폼 요소들 비활성화
-                </li>
-                <li class="descriptions">
-                    removeAttribute("속성 이름"):속성 삭제<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>이벤트</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    [마우스]<br>
-                    &emsp;click<br>
-                    &emsp;dblclick<br>
-                    &emsp;mouseover<br>
-                    &emsp;mouseout
-                </li>
-                <li class="descriptions">
-                    [키보드]<br>
-                    &emsp;keydown:키 누를 때<br>
-                    &emsp;keyup:키 뗄 때
-                </li>
-                <li class="descriptions">
-                    [폼]<br>
-                    &emsp;submit:폼 제출<br>
-                    &emsp;change:입력요소의 값이 변경될 때<br>
-                    &emsp;input:사용자가 입력하는 동안 실시간으로 발생
-                </li>
-                <li class="descriptions">
-                    [윈도우 이벤트]<br>
-                    &emsp;load:페이지나 이소스가 완전히 로드 된 후 발생<br>
-                    &emsp;resize:브라우저나 창 크기가 변경될 때<br>
-                    &emsp;scroll:사용자가 스크롤 시
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>이벤트 리스너</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    addEventListener("이벤트 종류",함수) - 함수 익명함수로 써도 됨<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>이벤트 속성</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    type:이벤트의 유형<br>
-                </li>
-                <li class="descriptions">
-                    target:이벤트가 발생한 요소(button)<br>
-                </li>
-                <li class="descriptions">
-                    preventDefault:기본동작(폼 제출, 링크 이동 등)을 취소<br>
-                </li>
-                <li class="descriptions">
-                    key:눌린 키의 값<br>
-                </li>
-                <li class="descriptions">
-                    clientX,clientY:뷰포트 기준 XY좌표<br>
-                </li>
-                <li class="descriptions">
-                    pageX, PageY:문서기준으로 마우스의 X,Y좌표<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>이벤트 객체</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    addEventListener("이벤트 종류",함수(event)) - 에서 자동으로 콜백함수의 프로퍼티에 입력됨<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>폼 요소 속성</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    type:text,checkbox,email<br>
-                </li>
-                <li class="descriptions">
-                    value:입력필드나 버튼의 현재값 가져오거나 설정<br>
-                </li>
-                <li class="descriptions">
-                    placeholder:입력필드 힌트값<br>
-                </li>
-                <li class="descriptions">
-                    checked:체크박스나 라디오 버튼 선택 됐는 지<br>
-                </li>
-                <li class="descriptions">
-                    disabled:요소 비활성화<br>
-                </li>
-                <li class="descriptions">
-                    required:필수 입력 필드 여부 지정<br>
-                </li>
-                <li class="descriptions">
-                    maxlength:입력필드의 최대 문자 길이(10,255...등)<br>
-                </li>
-                <li class="descriptions">
-                    readonly:입력필드를 읽기 전용 설정<br>
-                </li>
-                <li class="descriptions">
-                    selected:<option>요소가 기본 선택되었는 지 여부 지정<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>form 태그</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    submit:<form>태그에서만 사용가능<br>
-                </li>
-            </ol>
-        </div>
-        <div class="box selector">
-            <h1>변수</h1>
-            <hr>
-            <ol>
-                <li class="descriptions">
-                    변수선언 규칙<br>
-                    &emsp;변수명 문자,밑줄,달러기호로 시작<br>
-                    &emsp;자바스크립트 예약어 변수화 금지<br>
-                    &emsp;대소문자 구분함
-                </li>
-                <li class="descriptions">
-                    let:변수 재할당 가능<br>
-                </li>
-                <li class="descriptions">
-                    const:변수 재할당 불가<br>
-                </li>
-                <li class="descriptions">
-                    var:미친놈임,hoisting함<br>
-                </li>
-            </ol>
+        <div class="contents_wrapper">
+            <div class="box selector">
+                <h1 class="sub_theme">script 코드 head에다가 쓰기</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        defer태그 쓰면 됨 ㅇㅇ<br>
+                    </li>
+                    <!-- <li class="descriptions">
+                        <script src="script.js" defer></script><br>
+                    </li> -->
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">유용한 명령어들</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        alert():알림창에 괄호안의 메시지 띄우기<br>
+                    </li>
+                    <li class="descriptions">
+                        console.log():콘솔에 괄호안의 메시지 띄우기<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">convention</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        변수명:변수,함수이름은 소문자로 작성하고 이후나오는 단어는 대문자(camelCase)<br>
+                        &emsp;getNickName
+                    </li>
+                    <li class="descriptions">
+                        주석 적절히 잘 사용<br>
+                    </li>
+                    <li class="descriptions">
+                        문장 끝날 때마다 세미콜론 추가<br>
+                    </li>
+                    <li class="descriptions">
+                        적절한 들여쓰기<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">변수</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        변수선언 규칙<br>
+                        &emsp;변수명 문자,밑줄,달러기호로 시작<br>
+                        &emsp;자바스크립트 예약어 변수화 금지<br>
+                        &emsp;대소문자 구분함
+                    </li>
+                    <li class="descriptions">
+                        let:변수 재할당 가능<br>
+                    </li>
+                    <li class="descriptions">
+                        const:변수 재할당 불가<br>
+                    </li>
+                    <li class="descriptions">
+                        var:미친놈임,hoisting함<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">자료형</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        number,string,boolean,null,undefined,object,array<br>
+                    </li>
+                    <li class="descriptions">
+                        typeof():자료형 반환<br>
+                    </li>
+                    <li class="descriptions">
+                        number+string가능!<br>
+                    </li>
+                    <li class="descriptions">
+                        템플릿 리터럴:f string같은거임<br>
+                        &emsp;`오늘 사과값은 ${price}원 입니다`
+                    </li>
+                    <li class="descriptions">
+                        null:변수값이 선언되지 않음<br>
+                    </li>
+                    <li class="descriptions">
+                        undefined:변수값 선언되었지만 할당되진 않음<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">객체</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        object:여러정보 하나에 묶어서 저장 - 딕셔너리임<br>
+                        &emsp;let apple{<br>
+                        &emsp;&emsp;color:"red",<br>
+                        &emsp;&emsp;weight:150,<br>
+                        &emsp;&emsp;price:2000<br>
+                        &emsp;}
+                    </li>
+                    <li class="descriptions">
+                        객체 값 불러오기<br>
+                        &emsp;console.log(apple.color)<br>
+                        &emsp;console.log(apple["weight"])
+                    </li>
+                    <li class="descriptions">
+                        객체 값 추가<br>
+                        &emsp;apple.origin = "충주"; //값 추가
+                    </li>
+                    <li class="descriptions">
+                        객체 값 수정<br>
+                        &emsp;apple.price = 2800; //값 수정
+                    </li>
+                    <li class="descriptions">
+                        객체 값 삭제<br>
+                        &emsp;delete apple.price;
+                    </li>
+                    <li class="descriptions">
+                        배열 선언<br>
+                        &emsp;let products = ['고등어','삼치','김치']
+                    </li>
+                    <li class="descriptions">
+                        배열 추가<br>
+                        &emsp;product.push("딸기")
+                    </li>
+                    <li class="descriptions">
+                        배열 맨 뒤 삭제<br>
+                        &emsp;product.pop()
+                    </li>
+                    <li class="descriptions">
+                        배열 맨 앞 추가<br>
+                        &emsp;product.unshift("고구마")
+                    </li>
+                    <li class="descriptions">
+                        배열 맨 앞 삭제<br>
+                        &emsp;product.shift()
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">비교 연산자</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        == : 값이 같으면 참<br>
+                        &emsp;5 == '5' -> true
+                    </li>
+                    <li class="descriptions">
+                        === : 값과 자료형이 같으면 참 ***<br>
+                        &emsp;5 === '5' -> false
+                    </li>
+                    <li class="descriptions">
+                        != : 값이 다르면 참<br>
+                        &emsp;5 != '5' -> false
+                    </li>
+                    <li class="descriptions">
+                        !== : 값이나 자료형이 다르면 참 ***<br>
+                        &emsp;5 !== '5' -> true
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">논리 연산자</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        && : and<br>
+                    </li>
+                    <li class="descriptions">
+                        || : or<br>
+                    </li>
+                    <li class="descriptions">
+                        ! : not<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">삼항 연산자</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        let period = (조건) ? 'true 값':'false 값';<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">반복문</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        for(let num of num_list){}<br>
+                        &emsp;let lst = [1,23,4,5,6,78]<br>
+                        &emsp;for (let i of lst){<br>
+                        &emsp;&emsp;console.log(i)<br>
+                        &emsp;}
+                    </li>
+                    <li class="descriptions">
+                        do{반복할 코드} while(조건);<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">화살표 함수</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        const 함수이름 = (매개변수1,매개변수2...) => {실행할 코드}<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">요소 접근</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        document.getElementById:아이디로     document.getElementByClassName: 요소의 클래스명(배열)<br>
+                    </li>
+                    <li class="descriptions">
+                        document.getElementByTagName: 요소의 태그명(시멘틱 태그)<br>
+                    </li>
+                    <li class="descriptions">
+                        document.querySelector("선택자") - 첫번째 요소 반환<br>
+                    </li>
+                    <li class="descriptions">
+                        document.querySelectorAll("선택자") - 모든 요소 반환<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">콘텐츠 조작</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        element.textContent: 텍스트 조회,수정<br>
+                        &emsp;const winter = document.getElementsByClassName("winter");<br>
+                        &emsp;console.log(winter[0].textContent);
+                    </li>
+                    <li class="descriptions">
+                        element.innerHTML: 텍스트 뿐 아니라 Html 콘텐츠 수정,조회 가능<br>
+                        &emsp;const shirt=document.getElementsByTagName("li");<br>
+                        &emsp;shirt[0].innerHTML = "<strong>Yeah</strong>원"<br>
+                        &emsp;console.log(shirt[0].textContent)
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">HTML요소 속성 변경</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        getAttribute("속성 이름"):속성 조회<br>
+                    </li>
+                    <li class="descriptions">
+                        setAttribute("속성 이름","새로운 속성값"):속성 수정<br>
+                    </li>
+                    <li class="descriptions">
+                        setAttribute("disabled",true):<br>
+                        &emsp;disabled:button,input,textarea,select등의 폼 요소들 비활성화
+                    </li>
+                    <li class="descriptions">
+                        removeAttribute("속성 이름"):속성 삭제<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">이벤트</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        [마우스]<br>
+                        &emsp;click<br>
+                        &emsp;dblclick<br>
+                        &emsp;mouseover<br>
+                        &emsp;mouseout
+                    </li>
+                    <li class="descriptions">
+                        [키보드]<br>
+                        &emsp;keydown:키 누를 때<br>
+                        &emsp;keyup:키 뗄 때
+                    </li>
+                    <li class="descriptions">
+                        [폼]<br>
+                        &emsp;submit:폼 제출<br>
+                        &emsp;change:입력요소의 값이 변경될 때<br>
+                        &emsp;input:사용자가 입력하는 동안 실시간으로 발생
+                    </li>
+                    <li class="descriptions">
+                        [윈도우 이벤트]<br>
+                        &emsp;load:페이지나 이소스가 완전히 로드 된 후 발생<br>
+                        &emsp;resize:브라우저나 창 크기가 변경될 때<br>
+                        &emsp;scroll:사용자가 스크롤 시
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">이벤트 리스너</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        addEventListener("이벤트 종류",함수) - 함수 익명함수로 써도 됨<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">이벤트 속성</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        type:이벤트의 유형<br>
+                    </li>
+                    <li class="descriptions">
+                        target:이벤트가 발생한 요소(button)<br>
+                    </li>
+                    <li class="descriptions">
+                        preventDefault:기본동작(폼 제출, 링크 이동 등)을 취소<br>
+                    </li>
+                    <li class="descriptions">
+                        key:눌린 키의 값<br>
+                    </li>
+                    <li class="descriptions">
+                        clientX,clientY:뷰포트 기준 XY좌표<br>
+                    </li>
+                    <li class="descriptions">
+                        pageX, PageY:문서기준으로 마우스의 X,Y좌표<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">이벤트 객체</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        addEventListener("이벤트 종류",함수(event)) - 에서 자동으로 콜백함수의 프로퍼티에 입력됨<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">폼 요소 속성</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        type:text,checkbox,email<br>
+                    </li>
+                    <li class="descriptions">
+                        value:입력필드나 버튼의 현재값 가져오거나 설정<br>
+                    </li>
+                    <li class="descriptions">
+                        placeholder:입력필드 힌트값<br>
+                    </li>
+                    <li class="descriptions">
+                        checked:체크박스나 라디오 버튼 선택 됐는 지<br>
+                    </li>
+                    <li class="descriptions">
+                        disabled:요소 비활성화<br>
+                    </li>
+                    <li class="descriptions">
+                        required:필수 입력 필드 여부 지정<br>
+                    </li>
+                    <li class="descriptions">
+                        maxlength:입력필드의 최대 문자 길이(10,255...등)<br>
+                    </li>
+                    <li class="descriptions">
+                        readonly:입력필드를 읽기 전용 설정<br>
+                    </li>
+                    <li class="descriptions">
+                        selected:<option>요소가 기본 선택되었는 지 여부 지정<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">form 태그</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        submit:<form>태그에서만 사용가능<br>
+                    </li>
+                </ol>
+            </div>
+            <div class="box selector">
+                <h1 class="sub_theme">변수</h1>
+                <hr>
+                <ol class="toggle_window">
+                    <li class="descriptions">
+                        변수선언 규칙<br>
+                        &emsp;변수명 문자,밑줄,달러기호로 시작<br>
+                        &emsp;자바스크립트 예약어 변수화 금지<br>
+                        &emsp;대소문자 구분함
+                    </li>
+                    <li class="descriptions">
+                        let:변수 재할당 가능<br>
+                    </li>
+                    <li class="descriptions">
+                        const:변수 재할당 불가<br>
+                    </li>
+                    <li class="descriptions">
+                        var:미친놈임,hoisting함<br>
+                    </li>
+                </ol>
+            </div>
         </div>
     </main>
 </body>
