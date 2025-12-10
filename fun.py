@@ -166,18 +166,14 @@ CSS접근하기:html태그에 직접 적용된 인라인 스타일에 접근 가
 form 태그
     submit:<form>태그에서만 사용가능'''
 
-double_enter = '\n\n'
-string = string.split(double_enter)
-# print(string)
-
-# test_string = '''<변수>
-#     변수선언 규칙
-#         변수명 문자,밑줄,달러기호로 시작
-#         자바스크립트 예약어 변수화 금지
-#         대소문자 구분함
-#     let:변수 재할당 가능
-#     const:변수 재할당 불가
-#     var:미친놈임,hoisting함'''
+test_string = '''<변수>
+    변수선언 규칙
+        변수명 문자,밑줄,달러기호로 시작
+        자바스크립트 예약어 변수화 금지
+        대소문자 구분함
+    let:변수 재할당 가능
+    const:변수 재할당 불가
+    var:미친놈임,hoisting함'''
 
 
 
@@ -241,5 +237,4 @@ def string_To_dic(test_string):
     print(f'    </ol>')
     print(f'</div>')
 
-for i in string:
-    string_To_dic(i)
+string_To_dic(test_string)

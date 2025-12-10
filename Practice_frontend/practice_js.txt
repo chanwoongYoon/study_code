@@ -2,8 +2,9 @@
     defer태그 쓰면 됨 ㅇㅇ
     <script src="script.js" defer></script>
 
-alert():알림창에 괄호안의 메시지 띄우기
-console.log():콘솔에 괄호안의 메시지 띄우기
+<유용한 명령어들>
+    alert():알림창에 괄호안의 메시지 띄우기
+    console.log():콘솔에 괄호안의 메시지 띄우기
 
 <convention>
     변수명:변수,함수이름은 소문자로 작성하고 이후나오는 단어는 대문자(camelCase)
@@ -30,7 +31,7 @@ console.log():콘솔에 괄호안의 메시지 띄우기
     null:변수값이 선언되지 않음
     undefined:변수값 선언되었지만 할당되진 않음
 
-    <객체>
+<객체>
     object:여러정보 하나에 묶어서 저장 - 딕셔너리임
         let apple{
             color:"red",
@@ -47,7 +48,7 @@ console.log():콘솔에 괄호안의 메시지 띄우기
     객체 값 삭제
         delete apple.price;
     
-    <배열>
+<배열>
     배열 선언
         let products = ['고등어','삼치','김치']
     배열 추가
@@ -95,7 +96,7 @@ console.log():콘솔에 괄호안의 메시지 띄우기
     document.querySelector("선택자") - 첫번쨰 요소 반환
     document.querySelectorAll("선택자") - 모든 요소 반환
 
-<콘텐츠 조작>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+<콘텐츠 조작>
     element.textContent: 텍스트 조회,수정
         const winter = document.getElementsByClassName("winter");
         console.log(winter[0].textContent);
