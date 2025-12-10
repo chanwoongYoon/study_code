@@ -13,14 +13,12 @@ nav{
     --navigation_width : calc(100% - var(--right_margin));
     width:var(--navigation_width);
     height:120px;
-    background-color: #BCBCBC;
-    border:2px solid white;
-    border-top: none;
-    border-left:none;
 
     display:flex;
     align-items: center;
     justify-content:space-between;
+
+    background-color: #BCBCBC;
 }
 
 .content_size{
@@ -43,10 +41,6 @@ nav{
     align-items:center;
 }
 
-.article{
-    height:90%;
-}
-
 .logo{
     height:100%;
     width:auto;
@@ -55,24 +49,6 @@ nav{
     align-items:center;
 }
 
-main{
-    padding:10px;
-}
-
-.box{
-    margin-bottom:90px;
-}
-
-hr{
-    border:none;
-    background-color:white;
-    height:1px;
-}
-
-.descriptions{
-    line-height:30px;
-}
-
-.paragraph{
-    padding-left:26px;
+.article{
+    height:90%;
 }
