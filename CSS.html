@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>CSS</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -21,8 +21,20 @@
         </nav>
     </header>
     <main>
+        <div id="inventory_area">
+            <ul id="inventory">
+                <li class="inventory_list"><a href="#">선택자</a></li>
+                <li class="inventory_list"><a href="#">텍스트</a></li>
+                <li class="inventory_list"><a href="#">움직이기</a></li>
+                <li class="inventory_list"><a href="#">블록</a></li>
+                <li class="inventory_list"><a href="#">flex-box</a></li>
+                <li class="inventory_list"><a href="#">grid</a></li>
+                <li class="inventory_list"><a href="#">애니메이션</a></li>
+                <li class="inventory_list"><a href="#">엔티티</a></li>
+            </ul>
+        </div>
         <div id="contents_wrapper">
-            <div class="box selector">
+            <div class="box selector" id="selector">
                 <h1 class="sub_theme">선택자</h1>
                 <hr>
                 <ol class="toggle_window">
@@ -52,7 +64,7 @@
                 </ol>
             </div>
             <div class="box selector">
-                <h1 class="sub_theme">글자조정</h1>
+                <h1 class="sub_theme">텍스트 조정</h1>
                 <hr>
                 <ol class="toggle_window">
                     <li class="descriptions">
@@ -304,25 +316,8 @@
                     <p class="paragraph">& #####;</p>
                 </or>
             </div>
-            <div class="box selector">
-                <h1 class="sub_theme">시멘틱 태그</h1>
-                <hr>
-                <ol class="toggle_window">
-                    <li class="descriptions">
-                        article : 반복되는 요소
-                    </li>
-                    <li class="descriptions">
-                        aside : 필요조건 아님, 사이드바나 말풍선 
-                    </li>
-                    <li class="descriptions">
-                        time ; 시간 ,날짜 나타냄
-                    </li>
-                    <li class="descriptions">
-                        figure:독립적 요소 나타냄,일러,다이어그램 같은거 - 사람들 시선 끝고 캡션이 달림
-                    </li>
-                </ol>
-            </div>
         </div>
+        <div id="empty"></div>
     </main>
 </body>
 </html>

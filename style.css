@@ -2,24 +2,31 @@
     --bg_Dark : hsl(0%,0%, 0%);
     --bg : hsl(0, 0%, 5%);
     --bg_Light : hsl(0, 0%, 10%);
+
+    --inventoryWidth:20vw;
+    --contentWrapperWidth:60vw;
+    --emptyWidth:20vw;
 }
 
 body{
     margin:0px;
 }
 
-/* header */
+/* --------------------- header ---------------------*/
 
 header{
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 nav{
-    --right_margin : 0px;
-    --navigation_width : calc(100% - var(--right_margin));
+    --right_margin:0px;
+    --navigation_width:calc(100% - var(--right_margin));
+    --navigation_height:120px;
+
     width:var(--navigation_width);
-    height:120px;
+    height:var(--navigation_height);
     background-color: #BCBCBC;
 
     display:flex;
@@ -59,22 +66,49 @@ nav{
     align-items:center;
 }
 
-/* main */
+/* --------------------- main ---------------------*/
 
 main{
-    padding:10px;
     background-color: var(--bg_Dark);
+    display:flex;
+    margin-top:20px;
 }
 
+/* --------------------- inventory ---------------------*/
+#inventory_area{
+    --inventoryContentWidth:10vw;
+    width:var(--inventoryWidth);
+    top:0;
+    padding:0 auto;
+}
+
+#inventory{
+    width:var(--inventoryContentWidth);
+    height:40vh;
+
+    position:fixed;
+    left:calc(var(--inventoryWidth)/2);
+    transform: translateX(-50%);
+    background-color: aquamarine;
+
+    border-radius:10px;
+    margin:0 auto;
+}
+
+/* --------------------- contents_wrapper ---------------------*/
+
 #contents_wrapper{
-    max-width: 60vw;
+    max-width: var(--contentWrapperWidth);
     width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--bg);
+
     padding:50px;
     border: 5px solid var(--bg_Light);
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
+    background-color: var(--bg);
 }
 
 .box{
@@ -102,4 +136,10 @@ hr{
 
 .paragraph{
     padding-left:26px;
+}
+
+/* --------------------- empty ---------------------*/
+
+#empty{
+    width:var(--emptyWidth)
 }

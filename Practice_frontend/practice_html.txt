@@ -21,3 +21,22 @@
     
     a.name - url에 다음 값을 전달
         name = val 형식으로 전달
+
+<div class="box selector">
+    <h1 class="sub_theme">시멘틱 태그</h1>
+    <hr>
+    <ol class="toggle_window">
+        <li class="descriptions">
+            article : 반복되는 요소
+        </li>
+        <li class="descriptions">
+            aside : 필요조건 아님, 사이드바나 말풍선 
+        </li>
+        <li class="descriptions">
+            time ; 시간 ,날짜 나타냄
+        </li>
+        <li class="descriptions">
+            figure:독립적 요소 나타냄,일러,다이어그램 같은거 - 사람들 시선 끝고 캡션이 달림
+        </li>
+    </ol>
+</div>
