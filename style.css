@@ -1,5 +1,5 @@
 :root{
-    --bg_Dark : hsl(240, 100%, 100%);
+    --bg_Dark : hsl(0%,0%, 0%);
     --bg : hsl(0, 0%, 5%);
     --bg_Light : hsl(0, 0%, 10%);
 }
@@ -7,6 +7,7 @@
 body{
     margin:0px;
 }
+
 /* header */
 
 header{
@@ -65,8 +66,9 @@ main{
     background-color: var(--bg_Dark);
 }
 
-.contents_wrapper{
-    max-width: 1300px;
+#contents_wrapper{
+    max-width: 60vw;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--bg);
