@@ -38,24 +38,37 @@ nav{
     justify-content:space-between;
 }
 
-.contents{
-    margin:0;
-    width: 50%;
-    height:100%;
-    display: flex;
-    justify-content:space-evenly;
-    align-items:center;
-}
-
-.content_size{
+.logo_size{
     height:100%;
     width:auto;
     display:flex;
     align-items: center;
 }
 
-.content_size:hover{
+.contents{
+    width: 50%;
+    height:100%;
+    margin:0;
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.content{
+    height:calc(var(--navigation_height) * 0.9);
+    width:auto;
+    padding-bottom:calc(var(--navigation_height) * 0.1);
+    padding-left: 6px;
+    padding-right: 6px;
+
+    display:flex;
+    align-items: center;
+}
+
+.content:hover{
     cursor:pointer;
+    background: linear-gradient(0deg,hsla(0, 0%, 100%,0.7) 0%, hsla(0, 0%, 100%,0.5) 7%,hsla(0, 0%, 100%,0) 12%);
 }
 /* Code 로고 */
 .logo{
@@ -115,18 +128,31 @@ main{
     background-color: var(--bg_Light);
 }
 
+ul{
+    padding:0;
+    margin-bottom: 80px;
+
+    color:var(--Text_Light);
+
+    list-style-position:20px;
+}
+
 .box{
     margin-bottom:40px;
-    color:var(--Text_Light);
+}
+
+.sub_theme{
+    margin-left:40px;
 }
 
 .sub_theme:hover{
     cursor: pointer;
+    text-shadow: 2px 2px 5px black;
 }
 
 hr{
     border:none;
-    background-color:gray;
+    background-color:var(--bg);
     height:1px;
 }
 

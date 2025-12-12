@@ -1,13 +1,13 @@
 const subTheme = document.getElementsByClassName("sub_theme");
 const toggleWindow = document.getElementsByClassName("toggle_window");
 const contentsWrapper = document.getElementById("contents_wrapper");
+const content = document.getElementsByClassName("content")
 
 // subThemeList 만들기
 let subThemeList = []
 for (let i=0;i<subTheme.length;i++){
     subThemeList.push(subTheme[i].innerText)
 }
-
 //클릭하면 display 속성 변경
 if(contentsWrapper !== null){
     contentsWrapper.addEventListener("click",(event)=>{
@@ -25,7 +25,7 @@ if(contentsWrapper !== null){
 };
 
 
-
+//header master 코드 삽입
 
 // 1. 삽입할 대상 요소 (placeholder)를 찾습니다.
 const placeholder = document.getElementById('header');

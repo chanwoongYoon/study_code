@@ -2,36 +2,35 @@
     defer태그 쓰면 됨 ㅇㅇ
     <script src="script.js" defer></script>
 
-<유용한 명령어들>
-    alert():알림창에 괄호안의 메시지 띄우기
-    console.log():콘솔에 괄호안의 메시지 띄우기
+alert():알림창에 괄호안의 메시지 띄우기
+console.log():콘솔에 괄호안의 메시지 띄우기
 
 <convention>
-    변수명:변수,함수이름은 소문자로 작성하고 이후나오는 단어는 대문자(camelCase)
+    1.변수명:변수,함수이름은 소문자로 작성하고 이후나오는 단어는 대문자(camelCase)
         getNickName
-    주석 적절히 잘 사용
-    문장 끝날 때마다 세미콜론 추가
-    적절한 들여쓰기
+    2.주석 적절히 잘 사용
+    3.문장 끝날 때마다 세미콜론 추가
+    4.적절한 들여쓰기
 
 <변수>
     변수선언 규칙
-        변수명 문자,밑줄,달러기호로 시작
-        자바스크립트 예약어 변수화 금지
-        대소문자 구분함
+        1.변수명 문자,밑줄,달러기호로 시작
+        2.자바스크립트 예약어 변수화 금지
+        3.대소문자 구분함
     let:변수 재할당 가능
     const:변수 재할당 불가
     var:미친놈임,hoisting함
 
 <자료형>
-    number,string,boolean,null,undefined,object,array
-    typeof():자료형 반환
-    number+string가능!
-    템플릿 리터럴:f string같은거임
+    1.number,string,boolean,null,undefined,object,array
+    2.typeof():자료형 반환
+    3.number+string가능!
+    4.템플릿 리터럴:f string같은거임
         `오늘 사과값은 ${price}원 입니다`
-    null:변수값이 선언되지 않음
-    undefined:변수값 선언되었지만 할당되진 않음
+    5.null:변수값이 선언되지 않음
+    6.undefined:변수값 선언되었지만 할당되진 않음
 
-<객체>
+    <객체>
     object:여러정보 하나에 묶어서 저장 - 딕셔너리임
         let apple{
             color:"red",
@@ -48,7 +47,7 @@
     객체 값 삭제
         delete apple.price;
     
-<배열>
+    <배열>
     배열 선언
         let products = ['고등어','삼치','김치']
     배열 추가
@@ -61,30 +60,30 @@
         product.shift()
 
 <비교 연산자>
-    == : 값이 같으면 참 
+    1. == : 값이 같으면 참 
         5 == '5' -> true
-    === : 값과 자료형이 같으면 참 ***
+    2. === : 값과 자료형이 같으면 참 ***
         5 === '5' -> false
-    != : 값이 다르면 참
+    3. != : 값이 다르면 참
         5 != '5' -> false
-    !== : 값이나 자료형이 다르면 참 ***
+    4. !== : 값이나 자료형이 다르면 참 ***
         5 !== '5' -> true
 
 <논리 연산자>
-    && : and
-    || : or
-    ! : not
+    1. && : and
+    2. || : or
+    3. ! : not
 
 <삼항 연산자>
     let period = (조건) ? 'true 값':'false 값';
 
 <반복문>
-    for(let num of num_list){}
+    1.for(let num of num_list){}
         let lst = [1,23,4,5,6,78]
         for (let i of lst){
             console.log(i)
         }
-    do{반복할 코드} while(조건);
+    2.do{반복할 코드} while(조건);
 
 <화살표 함수>
     const 함수이름 = (매개변수1,매개변수2...) => {실행할 코드}
@@ -96,7 +95,7 @@
     document.querySelector("선택자") - 첫번쨰 요소 반환
     document.querySelectorAll("선택자") - 모든 요소 반환
 
-<콘텐츠 조작>
+<콘텐츠 조작>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     element.textContent: 텍스트 조회,수정
         const winter = document.getElementsByClassName("winter");
         console.log(winter[0].textContent);
@@ -163,3 +162,34 @@
 
 <form 태그>
     submit:<form>태그에서만 사용가능
+
+----------------------------------------------------------------------
+    <div class="box selector">
+        <h1>글자조정</h1>
+            <hr>
+            <ol>
+                <li class="descriptions">
+                    font-family: 폰트지정<br>
+                    &emsp;font-family:"궁서체","돋움",sans-serif;
+                </li>
+                <li class="descriptions">
+                    font-size: 글자 크기 지정<br>         
+                    &emsp;font-size:절대단위(px,pt)/상대단위(em,rem);<br>
+                    &emsp;&emsp;백분율: 부모요소의 폰트크기에 상대적인 단위<br>
+                    &emsp;&emsp;em:부모 요소의 폰트크기에 상대적 단위<br>
+                    &emsp;&emsp;rem:최고 부모 요소의 폰트크기에 상대적 단위
+                </li>
+                <li class="descriptions">
+                    font-style: 스타일 정의<br>
+                    &emsp;font-style: normal/italic(이탤릭체)/oblique(폰트 그냥 기울임 처리)
+                </li>
+                <li class="descriptions">
+                    font-weight: 폰트의 두께 설정<br>
+                    &emsp;font-weight: 키워드(normal{400},bold{700})/숫자(100,200...900)
+                </li>
+                <li class="descriptions">
+                    색상:<br>
+                    &emsp;color:색상명/hex코드/rgb/rgba
+                </li>
+            </ol>
+        </div>
