@@ -1,7 +1,10 @@
 :root{
-    --bg_Dark : hsl(0%,0%, 0%);
-    --bg : hsl(0, 0%, 5%);
-    --bg_Light : hsl(0, 0%, 10%);
+    --bg_Dark : hsl(0, 0%, 36%);
+    --bg : hsl(0, 0%, 41%);
+    --bg_Light : hsl(0, 0%, 46%);
+
+    --Text:hsl(0, 0%, 80%);
+    --Text_Light: hsl(0,0%,100%);
 
     --inventoryWidth:20vw;
     --contentWrapperWidth:60vw;
@@ -10,28 +13,38 @@
 
 body{
     margin:0px;
+    background-color: var(--bg_Dark);
 }
 
 /* --------------------- header ---------------------*/
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0px;
     z-index: 1;
+    width:100%;
+    backdrop-filter:blur(10px);
+    border-bottom: 1px solid var(--bg);
 }
 
 nav{
-    --right_margin:0px;
-    --navigation_width:calc(100% - var(--right_margin));
     --navigation_height:120px;
 
-    width:var(--navigation_width);
+    width:100%;
     height:var(--navigation_height);
-    background-color: #BCBCBC;
 
     display:flex;
     align-items: center;
     justify-content:space-between;
+}
+
+.contents{
+    margin:0;
+    width: 50%;
+    height:100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
 }
 
 .content_size{
@@ -44,20 +57,7 @@ nav{
 .content_size:hover{
     cursor:pointer;
 }
-
-.contents{
-    margin:0;
-    width: 50%;
-    height:100%;
-    display: flex;
-    justify-content:space-evenly;
-    align-items:center;
-}
-
-.article{
-    height:90%;
-}
-
+/* Code 로고 */
 .logo{
     height:100%;
     width:auto;
@@ -65,18 +65,22 @@ nav{
     justify-content:center;
     align-items:center;
 }
-
+/*페이지 로고*/
+.article{
+    height:90%;
+}
 /* --------------------- main ---------------------*/
 
 main{
-    background-color: var(--bg_Dark);
     display:flex;
-    margin-top:20px;
+    padding-top:150px;
+    padding-bottom:20px;
+    width:100%;
 }
 
 /* --------------------- inventory ---------------------*/
 #inventory_area{
-    --inventoryContentWidth:10vw;
+    --inventoryContentWidth: 10vw;
     width:var(--inventoryWidth);
     top:0;
     padding:0 auto;
@@ -89,7 +93,7 @@ main{
     position:fixed;
     left:calc(var(--inventoryWidth)/2);
     transform: translateX(-50%);
-    background-color: aquamarine;
+    background-color: var(--bg_Light);
 
     border-radius:10px;
     margin:0 auto;
@@ -102,18 +106,18 @@ main{
     width:100%;
 
     padding:50px;
-    border: 5px solid var(--bg_Light);
+    border: 3px solid var(--bg);
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
 
-    background-color: var(--bg);
+    background-color: var(--bg_Light);
 }
 
 .box{
     margin-bottom:40px;
-    color:gray;
+    color:var(--Text_Light);
 }
 
 .sub_theme:hover{
@@ -128,10 +132,12 @@ hr{
 
 .toggle_window{
     display:none
+
 }
 
 .descriptions{
     line-height:30px;
+    color:var(--Text)
 }
 
 .paragraph{
