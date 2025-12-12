@@ -169,3 +169,5 @@
 ul {
     list-style-type: none;
 }
+----------
+background: linear-gradient(0deg,hsla(0, 0%, 100%,0.7) 0%, hsla(0, 0%, 100%,0.5) 7%,hsla(0, 0%, 100%,0) 12%);

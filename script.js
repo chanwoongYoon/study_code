@@ -8,6 +8,7 @@ let subThemeList = []
 for (let i=0;i<subTheme.length;i++){
     subThemeList.push(subTheme[i].innerText)
 }
+
 //클릭하면 display 속성 변경
 if(contentsWrapper !== null){
     contentsWrapper.addEventListener("click",(event)=>{
