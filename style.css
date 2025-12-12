@@ -11,6 +11,8 @@
     --emptyWidth:20vw;
 }
 
+/* --------------------- body ---------------------*/
+
 body{
     margin:0px;
     background-color: var(--bg_Dark);
