@@ -57,31 +57,22 @@ nav{
     height:100%;
     margin:0;
 
-    display: flex;
-    justify-content:space-evenly;
-    align-items:center;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(6,1fr);
+    
 }
 
 .content{
-    height:calc(var(--navigation_height) * 0.9);
-    width:auto;
-    padding-bottom:calc(var(--navigation_height) * 0.1);
-    padding-left: 6px;
-    padding-right: 6px;
+    height:calc(var(--navigation_height)/2);
 
     display:flex;
     align-items: center;
+    justify-content: center;
 }
 
 .content:hover{
     cursor:pointer;
-    /* background: linear-gradient(0deg,hsla(0, 0%, 100%,0.7) 0%, hsla(0, 0%, 100%,0.5) 7%,hsla(0, 0%, 100%,0) 12%); */
-    background: linear-gradient(to bottom, 
-                                transparent 0%,   /* 맨 위부터 90%까지 투명 */
-                                transparent 95%,
-                                white 95%,      /* 90%부터 아래는 지정색 (#FFC0CB: 핑크) */
-                                white 100%
-                               );
 }
 /* Code 로고 */
 .logo{
@@ -93,7 +84,8 @@ nav{
 }
 /*페이지 로고*/
 .article{
-    height:90%;
+    height:100%;
+    align-items: center;
 }
 /* --------------------- main ---------------------*/
 
