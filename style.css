@@ -16,6 +16,11 @@
 body{
     margin:0px;
     background-color: var(--bg_Dark);
+    /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-repeat: no-repeat; */
+
 }
 
 /* --------------------- header ---------------------*/
@@ -70,7 +75,13 @@ nav{
 
 .content:hover{
     cursor:pointer;
-    background: linear-gradient(0deg,hsla(0, 0%, 100%,0.7) 0%, hsla(0, 0%, 100%,0.5) 7%,hsla(0, 0%, 100%,0) 12%);
+    /* background: linear-gradient(0deg,hsla(0, 0%, 100%,0.7) 0%, hsla(0, 0%, 100%,0.5) 7%,hsla(0, 0%, 100%,0) 12%); */
+    background: linear-gradient(to bottom, 
+                                transparent 0%,   /* 맨 위부터 90%까지 투명 */
+                                transparent 95%,
+                                white 95%,      /* 90%부터 아래는 지정색 (#FFC0CB: 핑크) */
+                                white 100%
+                               );
 }
 /* Code 로고 */
 .logo{
@@ -136,7 +147,8 @@ ul{
 
     color:var(--Text_Light);
 
-    list-style-position:20px;
+    padding-left: 40px;
+    list-style-type: none;
 }
 
 .box{
@@ -145,6 +157,20 @@ ul{
 
 .sub_theme{
     margin-left:40px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.sub_theme::before {
+    content: '•'; 
+    position: absolute;
+    
+    left: -5px;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    
+    margin-right: 10px; 
 }
 
 .sub_theme:hover{

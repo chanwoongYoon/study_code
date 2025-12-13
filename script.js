@@ -1,5 +1,3 @@
-const content = document.getElementsByClassName("content")
-
 //toggleButtonParent(id)안에 toggleButton(class) 누르면 popUpWindow(class)가 튀어나옴
 function togglePopUpWindow(toggleButtonParent,toggleButton,popUpWindow){
     //요소 불러오기
@@ -29,8 +27,7 @@ function togglePopUpWindow(toggleButtonParent,toggleButton,popUpWindow){
     };
 };
 
-
-//header master 코드 삽입
+//masterHeader(html)코드를 tergetHeader(id)에 삽입
 function fetchHeader(masterHeader,targetHeader){
     // 1. 삽입할 대상 요소 (placeholder)를 찾습니다.
     const placeholder = document.getElementById(targetHeader);
@@ -53,6 +50,9 @@ function fetchHeader(masterHeader,targetHeader){
             console.error("Error loading header:", error);
         });
 };
+
+//기능부
+const content = document.getElementsByClassName("content")
 
 togglePopUpWindow("contents_wrapper","sub_theme","toggle_window")
 fetchHeader('header.html','header')
