@@ -22,6 +22,51 @@
     a.name - url에 다음 값을 전달
         name = val 형식으로 전달
 
+    form:사용측에서 입력을 입력하는 HTML양식 정의
+    input:입력 컨트롤 정의
+    textarea:다중라인 입력 컨트롤 정의
+    label:입력요소 레이블 정의
+    fieldset:관련 요소 양식으로 그룹화
+    legend:<fieldset>요소에 대한 캡션 정의
+    select:드롭다운 목록 정의
+    optgroup:드롭다운 목록에서 관련 옵션 그룹 정의
+    option:드롭다운 목록에서 옵션 정의
+    button:클릭가능 버튼 정의
+
+    <form>
+        method
+            전송방식 선택(get,post) 
+        name
+            form 의 이름 - 서버 제출된 폼데이터 참조에 쓰임 
+        action
+            form 전송할 서버쪽의 js파일 지정 -url,html링크 
+        target
+            파일 다른 위치에서 열기 
+        autocomplete
+            자동완성 
+        enctype
+            데이터 인코딩 방식 정의 
+        novalidate
+            폼 데이터 서버 제출 시 해당 데이터 유효성 검사 안함 
+
+    <input>
+        readonly
+            읽기 전용 필드로 만들기
+        placeholder
+            힌트 표시
+        autofocus
+            페이지 불러오자마자 특정 부분에 마우스 표시 
+        autocomplete
+            자동완성 
+        max/min
+            input필드의 최대/최솟값 지정
+        maxLength
+            텍스트 필드에 최대로 입력할 수 있는 문자의 개수 설정
+        step
+            숫자의 간격 설정
+
+
+
 <div class="box selector">
     <h1 class="sub_theme">시멘틱 태그</h1>
     <hr>
